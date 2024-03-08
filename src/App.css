@@ -18,7 +18,7 @@ p {
 label {
   font-size: 12px;
   font-weight: bold;
-  color: #707070;
+  color: #1d1d1d;
 }
 
 .form-check-label {
@@ -84,7 +84,12 @@ button {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  background-color: #24968f;
+  background: #007e7a;
+  border-color: #007e7a;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: none;
+  border: none;
 }
 
 .alert-danger {
