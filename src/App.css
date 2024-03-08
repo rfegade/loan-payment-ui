@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  font-size: 16px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.form-check-label {
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+}
+.loan-number {
+  display: grid;
+}
+
+.container {
+  max-width: 850px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px auto;
+  padding: 0 12px;
+  border: 1px solid #cccccc;
+  max-width: 850px;
+  background-color: #ffffff;
+}
+
+.acc-info {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  border-bottom: 1px solid #cccccc;
+}
+
+.acc-info:last-child {
+  border-bottom: none;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+}
+
+.radio-container input[type="radio"] {
+  width: auto;
+}
+
+.img-container {
+  border-left: 1px solid #cccccc;
+  background-color: #f4f7fc;
+}
+
+.img-container p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cvv {
+  border-left: 1px solid #cccccc;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #24968f;
+}
+
+.alert-danger {
+  color: red;
+  font-size: 12px;
+  border-radius: 0;
+  border: 1px solid #cccccc;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) {
+  .cvv {
+    padding-left: 0;
+  }
+  .exp-date {
+    padding-right: 0;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 767px) {
+  .row {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .acc-info:last-child {
+    border-bottom: 1px solid #cccccc;
+  }
+  .cvv {
+    border-left: none;
+    border-top: 1px solid #cccccc;
+  }
+  .img-container {
+    border-top: 1px solid #cccccc;
   }
 }
